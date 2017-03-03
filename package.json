@@ -1,0 +1,24 @@
+{
+  "name": "faberlic-parser",
+  "version": "1.0.0",
+  "description": "Parser for faberlic products.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seclace/faberlic-parser.git"
+  },
+  "keywords": [
+    "faberlic",
+    "parser",
+    "node-js"
+  ],
+  "author": "seclace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seclace/faberlic-parser/issues"
+  },
+  "homepage": "https://github.com/seclace/faberlic-parser#readme"
+}
