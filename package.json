@@ -4,7 +4,14 @@
   "description": "Parser for faberlic products.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "node ./bin/index.js",
+    "start": "npm run build && npm run parse",
+    "build": "npm run b && npm run bm",
+    "b": "./node_modules/.bin/babel ./index.js -d bin",
+    "bm": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin",
+    "publish:first": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin",
+    "publish:all": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin"
   },
   "repository": {
     "type": "git",
@@ -20,5 +27,16 @@
   "bugs": {
     "url": "https://github.com/seclace/faberlic-parser/issues"
   },
-  "homepage": "https://github.com/seclace/faberlic-parser#readme"
+  "homepage": "https://github.com/seclace/faberlic-parser#readme",
+  "dependencies": {
+    "excel4node": "^1.2.1",
+    "lodash.isarray": "^4.0.0",
+    "osmosis": "^1.1.2",
+    "querystring": "^0.2.0",
+    "vk-dirty-api": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
+  }
 }
