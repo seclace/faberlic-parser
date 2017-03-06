@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "parse": "node ./bin/index.js",
     "start": "npm run build && npm run parse",
-    "build": "npm run b && npm run bm",
-    "b": "./node_modules/.bin/babel ./index.js -d bin",
-    "bm": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin",
-    "publish:first": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin",
+    "build": "./node_modules/.bin/babel ./index.js ./modules/* -d bin",
+    "publish:one": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin",
     "publish:all": "./node_modules/.bin/babel ./modules/listing-mapping.js -d bin"
   },
   "repository": {
